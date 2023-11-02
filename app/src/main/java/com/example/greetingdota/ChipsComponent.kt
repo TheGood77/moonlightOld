@@ -35,9 +35,9 @@ fun ChipsComponent() {
                 colors = AssistChipDefaults.assistChipColors(containerColor = ChipsBackgroundColor),
                 label = {
                     Text(
+                        style = Chips_Text,
                         text = item,
-                        textAlign = TextAlign.Left,
-                        style = Chips_Text
+                        textAlign = TextAlign.Center
                     )
                 }
             )

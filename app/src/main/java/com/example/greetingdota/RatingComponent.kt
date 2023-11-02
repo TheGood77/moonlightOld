@@ -10,7 +10,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.greetingdota.ui.theme.Count_Review_Text
@@ -37,7 +36,6 @@ fun RatingComponent(
         }
         Text(
             text = stringResource(id = R.string.count_review_text),
-            textAlign = TextAlign.Center,
             style = Count_Review_Text
         )
     }

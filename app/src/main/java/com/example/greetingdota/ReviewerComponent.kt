@@ -65,7 +65,40 @@ fun ReviewerComponent(
         thickness = 1.dp,
         color = DividerColor
     )
-} // TODO
+    Column(modifier = modifier.padding(horizontal = 24.dp)) {
+        Row(
+            horizontalArrangement = Arrangement.spacedBy(space = 16.dp)
+        ) {
+            Image(
+                modifier = modifier
+                    .size(36.dp)
+                    .clip(CircleShape),
+                painter = painterResource(id = R.drawable.ic_second_reviewer),
+                contentDescription = "Reviewer image"
+            )
+            Column(
+                verticalArrangement = Arrangement.spacedBy(space = 7.dp)
+            ) {
+                Text(
+                    text = stringResource(id = R.string.second_name_reviewer),
+                    textAlign = TextAlign.Center,
+                    style = Reviewer_Name_Text
+                )
+                Text(
+                    text = stringResource(id = R.string.date_review),
+                    textAlign = TextAlign.Center,
+                    style = Date_Review_Text
+                )
+            }
+        }
+        Spacer(modifier = modifier.padding(top = 16.dp))
+        Text(
+            text = stringResource(id = R.string.reviewer_text),
+            textAlign = TextAlign.Left,
+            style = Reviewer_Description_Text
+        )
+    }
+}
 
 @Preview(showBackground = true)
 @Composable

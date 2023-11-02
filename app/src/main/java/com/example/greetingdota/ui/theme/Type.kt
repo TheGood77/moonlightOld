@@ -15,7 +15,7 @@ val modernistFamily = FontFamily(
 )
 
 val montserratFamily = FontFamily(
-    Font(R.font.montserrat_medium, weight =  FontWeight.Normal),
+    Font(R.font.montserrat_regular, weight = FontWeight.Normal)
 )
 
 // Set of Material typography styles to start with
