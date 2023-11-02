@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
 fun BackgroundImageComponent() {
@@ -12,4 +13,10 @@ fun BackgroundImageComponent() {
         contentDescription = "background_image",
         contentScale = ContentScale.Crop,
     )
+}
+
+@Preview(showBackground = true)
+@Composable
+fun BackgroundImageComponentPreview() {
+    BackgroundImageComponent()
 }

@@ -12,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.greetingdota.ui.theme.ChipsBackgroundColor
 import com.example.greetingdota.ui.theme.Chips_Text
@@ -20,7 +21,7 @@ val items = listOf("MOBA", "MULTIPLAYER", "STRATEGY")
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ChipsRowComponent() {
+fun ChipsComponent() {
     LazyRow(
         horizontalArrangement = Arrangement.spacedBy(10.dp),
         contentPadding = PaddingValues(24.dp),
@@ -42,4 +43,10 @@ fun ChipsRowComponent() {
             )
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun ChipsComponentPreview() {
+    ChipsComponent()
 }
