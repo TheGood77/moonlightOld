@@ -19,7 +19,7 @@ fun BackgroundComponent() {
         modifier = Modifier
             .fillMaxWidth()
             .padding(top = 350.dp)
-            .clip(shape = RoundedCornerShape(20.dp))
+            .clip(shape = RoundedCornerShape(10.dp))
             .size(size = 930.dp)
             .background(color = BackgroundColor)
     )

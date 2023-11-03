@@ -2,6 +2,7 @@ package com.example.greetingdota
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -15,6 +16,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.greetingdota.ui.theme.ChipsBackgroundColor
+import com.example.greetingdota.ui.theme.ChipsTextColor
 import com.example.greetingdota.ui.theme.Chips_Text
 
 val items = listOf("MOBA", "MULTIPLAYER", "STRATEGY")
@@ -29,6 +31,7 @@ fun ChipsComponent() {
     ) {
         items(items) { item ->
             AssistChip(
+                modifier = Modifier.height(22.dp),
                 onClick = {},
                 shape = RoundedCornerShape(100.dp),
                 border = null,
@@ -37,7 +40,8 @@ fun ChipsComponent() {
                     Text(
                         style = Chips_Text,
                         text = item,
-                        textAlign = TextAlign.Center
+                        textAlign = TextAlign.Center,
+                        color = ChipsTextColor
                     )
                 }
             )

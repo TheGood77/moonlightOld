@@ -77,6 +77,7 @@ fun MainScreen() {
                         .padding(top = 400.dp)
                 ) {
                     Column {
+                        Spacer(modifier = Modifier.padding(top = 10.dp))
                         ChipsComponent()
                         TextDescriptionComponent()
                         Spacer(modifier = Modifier.padding(vertical = 7.dp))

@@ -67,9 +67,7 @@ val Chips_Text = TextStyle(
     fontFamily = montserratFamily,
     fontWeight = FontWeight.Normal,
     fontSize = 10.sp,
-    lineHeight = 12.sp,
-    letterSpacing = 0.sp,
-    color = ChipsTextColor
+    letterSpacing = 0.sp
 )
 
 val Description_Text = TextStyle(
