@@ -7,7 +7,7 @@
 * Tap button "Run 'app'"
 
 ## Screenshots app
-|                       First part                       |
+|                      Screenshots                       |
 |:------------------------------------------------------:|
-| <img src="assets/first_screenshot.webp" height="400"> | 
+| <img src="assets/first_screenshot.webp" height="400">  | 
 | <img src="assets/second_screenshot.webp" height="400"> | 
